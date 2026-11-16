@@ -1,7 +1,7 @@
 {
   "username": "lzy3090Ti",
   "updated_utc": "2026-11-16",
-  "original_repositories": 13,
+  "original_repositories": 14,
   "excluded_forks": 1,
   "primary_languages": [
     [
@@ -13,15 +13,15 @@
       2
     ],
     [
+      "Python",
+      2
+    ],
+    [
       "Dart",
       1
     ],
     [
       "PHP",
-      1
-    ],
-    [
-      "Python",
       1
     ],
     [
@@ -140,7 +140,7 @@
     },
     {
       "date": "2026-11-16",
-      "events": 0
+      "events": 1
     }
   ],
   "source": "Official GitHub REST API; recent public events are limited to the latest 300."
