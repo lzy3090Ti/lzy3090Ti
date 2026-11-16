@@ -64,10 +64,10 @@
   <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/activity-mobile-dark.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg">
-  <img src="assets/activity.svg" alt="GitHub 公开数据：原创仓库、仓库主语言、近 28 天公开事件。每天自动更新。" width="100%">
+  <img src="assets/activity.svg" alt="GitHub 公开数据：原创仓库、仓库主语言、近 28 天公开事件。定时自动更新。" width="100%">
 </picture>
 
-<sub>每天从 GitHub 官方 API 更新。主语言按公开原创仓库数统计；活动为公开事件数，不等于提交数，受 API 最近 300 条记录上限影响。[数据](assets/github-data.json) · [更新记录](https://github.com/lzy3090Ti/lzy3090Ti/actions/workflows/refresh-profile.yml)</sub>
+<sub>定时从 GitHub 官方 API 更新。主语言按公开原创仓库数统计；活动为公开事件数，不等于提交数，受 API 最近 300 条记录上限影响。[数据](assets/github-data.json) · [更新记录](https://github.com/lzy3090Ti/lzy3090Ti/actions/workflows/refresh-profile.yml)</sub>
 
 <br>
 

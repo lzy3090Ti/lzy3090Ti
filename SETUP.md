@@ -23,6 +23,15 @@
 - GitHub README 不能执行实时脚本，图片还有 GitHub / 浏览器缓存，因此这里是每小时尝试刷新的快照，不能保证秒级实时；点击图片进入平台查看当前数据。
 - `npm test` 校验数值解析、账号身份及时间显示。
 
+## Gitee 官方镜像
+
+- 源仓库：<https://github.com/lzy3090Ti/lzy3090Ti>；目标仓库：<https://gitee.com/ZackLi09/ZackLi09>。
+- 使用 Gitee「仓库镜像管理」的 **Pull** 镜像，并开启「自动从 GitHub 同步仓库」。由 Gitee 官方创建 GitHub Webhook，在源仓库推送后触发同步；同一镜像最短更新间隔为 5 分钟。
+- GitHub 是内容源，日常修改和粉丝数自动更新都在 GitHub 完成，再同步至 Gitee。直接修改 Gitee 镜像中的文件会被后续同步覆盖。
+- 镜像凭据是专用的 GitHub classic PAT，按用户要求设置为 **No expiration**，权限为 Gitee 官方要求的 `repo` 和 `admin:repo_hook`。令牌仅填入 Gitee 官方配置，不保存在本仓库。若主动撤销令牌，需要在镜像编辑页更换并检查 Webhook。
+- Gitee 个人主页已添加镜像仓库精选入口；完整主页展示在镜像仓库的 README。Gitee 会使用图片的浅色回退版本。
+- 镜像设置：<https://gitee.com/ZackLi09/ZackLi09/mirrors>；官方说明：<https://help.gitee.com/repository/settings/sync-between-gitee-github>。
+
 ## 修改内容
 
 - 自我介绍、项目链接、精选视频链接：编辑 `README.md`。
