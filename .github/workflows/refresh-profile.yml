@@ -2,7 +2,7 @@ name: Refresh profile artwork
 
 on:
   schedule:
-    - cron: '23 0 * * *' # 08:23 Asia/Shanghai; GitHub may delay scheduled runs.
+    - cron: '23 * * * *' # Every hour at :23; GitHub may delay scheduled runs.
   workflow_dispatch:
 
 permissions:
@@ -15,20 +15,35 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Check out profile
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Refresh official GitHub data
+        id: github
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/update_profile.py
+      - name: Install public-page reader
+        run: |
+          npm ci --ignore-scripts
+          npx playwright install --with-deps chromium
+      - name: Refresh public follower counts
+        id: social
+        continue-on-error: true
+        run: node scripts/update_social.cjs
       - name: Commit changed artwork
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/activity*.svg assets/github-data.json
+          git add assets/activity*.svg assets/github-data.json assets/*-followers*.svg assets/social-data.json
           if ! git diff --cached --quiet; then
-            git commit -m "chore: refresh public GitHub activity"
+            git commit -m "chore: refresh public profile data"
             git push
           fi
+      - name: Report failed refresh
+        if: steps.github.outcome == 'failure' || steps.social.outcome == 'failure'
+        run: |
+          echo 'Some data could not refresh. Check preceding steps; last successful figures were preserved.'
+          exit 1

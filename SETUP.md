@@ -9,7 +9,19 @@
 3. 在 Actions 中打开 **Refresh profile artwork**，手动执行一次，确认成功。
 4. 打开 https://github.com/lzy3090Ti 检查显示。
 
-默认工作流每天北京时间约 08:23 更新 GitHub 图表，调度可能延迟。只使用内置 GITHUB_TOKEN，不需要购买服务或额外设置 Personal Access Token。公开仓库的定时工作流可能因长期无活动被 GitHub 暂停，重新启用即可。
+默认工作流每小时第 23 分钟尝试更新 GitHub 图表和 B 站 / 抖音粉丝数，调度可能延迟。只使用内置 GITHUB_TOKEN，不需要购买服务或额外设置 Personal Access Token。公开仓库的定时工作流可能因长期无活动被 GitHub 暂停，重新启用即可。
+
+## 粉丝数与抖音入口
+
+- 抖音号：`94425926195`，与页面昵称「硬盒子和软盒子」同时校验，入口直接指向已核实的个人主页。
+- B 站使用公开 `x/relation/stat` 接口，校验返回的 UID 为 `1785338201`。
+- 抖音使用 Playwright 打开未登录的公开页面，只读取 `user-info` 里的抖音号及 `user-info-fans`。不使用浏览器登录状态、Cookie、逆向签名或第三方粉丝服务。
+- 新增运行依赖：Node.js 22+、固定版本 Playwright 1.65.1 及 Chromium；依赖锁定在 `package-lock.json`。
+- 本地运行：`npm ci --ignore-scripts`、`npx playwright install chromium`、`npm run update:social`。已有 Chromium 时可设置 `PROFILE_CHROMIUM_PATH` 为其可执行文件绝对路径。
+- 自动更新只需要公开页面，无需额外凭据。抖音可能限制云端或海外机器访问；请求失败、要求验证或字段变化时，保留上次成功的数字及原始获取时间，不显示为零。Actions 日志会发出 warning；两个平台均失败时工作流失败。
+- 数字图片同时显示北京时间的最近获取时间，仓库内 `assets/social-data.json` 保存来源与时间。简写为“万 / 亿”的平台数据会标注“约”。
+- GitHub README 不能执行实时脚本，图片还有 GitHub / 浏览器缓存，因此这里是每小时尝试刷新的快照，不能保证秒级实时；点击图片进入平台查看当前数据。
+- `npm test` 校验数值解析、账号身份及时间显示。
 
 ## 修改内容
 

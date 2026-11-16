@@ -8,12 +8,18 @@
 
 <p align="center">
   <a href="https://github.com/lzy3090Ti?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/github-link-dark.svg"><img src="assets/github-link.svg" alt="看我的代码" width="230"></picture></a>
-  <a href="https://space.bilibili.com/1785338201"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/bilibili-link-dark.svg"><img src="assets/bilibili-link.svg" alt="去 B 站看看：硬盒子和软盒子" width="230"></picture></a>
 </p>
+
+<p>
+  <a href="https://space.bilibili.com/1785338201"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/bilibili-followers-dark.svg"><img src="assets/bilibili-followers.svg" alt="B 站：硬盒子和软盒子，粉丝数与最近获取时间。点击进入频道。" width="49%"></picture></a>
+  <a href="https://www.douyin.com/user/MS4wLjABAAAA3HU4TboUtHCHguxY0ZzIw46G55uOswpWQBci_sNSrqvHt80IZRpi2f940pjvtylP"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/douyin-followers-dark.svg"><img src="assets/douyin-followers.svg" alt="抖音：硬盒子和软盒子，抖音号 94425926195，粉丝数与最近获取时间。点击进入主页。" width="49%"></picture></a>
+</p>
+
+<sub>粉丝数每小时尝试更新，以图中最近获取时间为准；平台限制或 GitHub 图片缓存可能造成延迟。[数据与更新时间](assets/social-data.json) · [更新记录](https://github.com/lzy3090Ti/lzy3090Ti/actions/workflows/refresh-profile.yml)</sub>
 
 ### 你好，我是 lzy3090Ti。
 
-在 B 站叫 **「硬盒子和软盒子」**。还是个学生，平时写代码，也折腾硬件、拍科技视频。
+在 B 站和抖音都叫 **「硬盒子和软盒子」**。还是个学生，平时写代码，也折腾硬件、拍科技视频。
 
 从课堂上的随机点名，到装在手机里的 F1 赛历，我喜欢从身边的小需求开始做东西。这里放代码，视频里聊过程。
 
@@ -48,7 +54,7 @@
 
 [蜘蛛侠查找器](https://www.bilibili.com/video/BV1pTGc66Ecf/) · [小爱同学智能灯](https://www.bilibili.com/video/BV1TZGe61EfQ/) · [随机点名工具](https://www.bilibili.com/video/BV1USRvYZEvr/)
 
-做出来的东西，也想拍给你看。完整视频和其他投稿都在 **[我的 B 站频道](https://space.bilibili.com/1785338201)**。
+做出来的东西，也想拍给你看。视频和其他投稿在 **[我的 B 站频道](https://space.bilibili.com/1785338201)** 和 **[抖音主页](https://www.douyin.com/user/MS4wLjABAAAA3HU4TboUtHCHguxY0ZzIw46G55uOswpWQBci_sNSrqvHt80IZRpi2f940pjvtylP)**。
 
 <br>
 

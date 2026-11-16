@@ -1,0 +1,16 @@
+{
+  "name": "lzy3090ti-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public follower counts for my GitHub profile",
+  "scripts": {
+    "update:social": "node scripts/update_social.cjs",
+    "test": "node --test scripts/update_social.test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "playwright": "1.65.1"
+  }
+}
