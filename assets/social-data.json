@@ -8,16 +8,16 @@
       "followers": 96,
       "approximate": false,
       "source": "https://api.bilibili.com/x/relation/stat?vmid=1785338201",
-      "updated_at": "2026-11-18T10:24:04.663Z"
+      "updated_at": "2026-11-18T19:27:25.526Z"
     },
     "douyin": {
       "name": "硬盒子和软盒子",
       "account_id": "94425926195",
       "url": "https://www.douyin.com/user/MS4wLjABAAAA3HU4TboUtHCHguxY0ZzIw46G55uOswpWQBci_sNSrqvHt80IZRpi2f940pjvtylP",
-      "followers": 1926,
+      "followers": 1924,
       "approximate": false,
       "source": "https://www.douyin.com/user/MS4wLjABAAAA3HU4TboUtHCHguxY0ZzIw46G55uOswpWQBci_sNSrqvHt80IZRpi2f940pjvtylP",
-      "updated_at": "2026-11-18T10:24:10.073Z"
+      "updated_at": "2026-11-18T19:27:32.010Z"
     }
   }
 }
