@@ -8,7 +8,7 @@
       "followers": 96,
       "approximate": false,
       "source": "https://api.bilibili.com/x/relation/stat?vmid=1785338201",
-      "updated_at": "2026-11-21T22:15:21.100Z"
+      "updated_at": "2026-11-22T02:24:12.931Z"
     },
     "douyin": {
       "name": "硬盒子和软盒子",
@@ -17,7 +17,7 @@
       "followers": 1923,
       "approximate": false,
       "source": "https://www.douyin.com/user/MS4wLjABAAAA3HU4TboUtHCHguxY0ZzIw46G55uOswpWQBci_sNSrqvHt80IZRpi2f940pjvtylP",
-      "updated_at": "2026-11-21T22:15:44.981Z"
+      "updated_at": "2026-11-22T02:24:18.907Z"
     }
   }
 }
