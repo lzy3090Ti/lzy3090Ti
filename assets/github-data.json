@@ -1,6 +1,6 @@
 {
   "username": "lzy3090Ti",
-  "updated_utc": "2026-11-27",
+  "updated_utc": "2026-11-28",
   "original_repositories": 14,
   "excluded_forks": 1,
   "primary_languages": [
@@ -30,10 +30,6 @@
     ]
   ],
   "daily_public_events": [
-    {
-      "date": "2026-10-31",
-      "events": 3
-    },
     {
       "date": "2026-11-01",
       "events": 3
@@ -140,6 +136,10 @@
     },
     {
       "date": "2026-11-27",
+      "events": 0
+    },
+    {
+      "date": "2026-11-28",
       "events": 0
     }
   ],
